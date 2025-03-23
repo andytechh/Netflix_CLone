@@ -5,10 +5,13 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-screen flex justify-between items-center gap-90 pt-5">
-      <h3 className="text-5xl text-red-600 font-bold ml-90">NETFLIX</h3>
+    <div className="w-full flex-row justify-center ml-10 items-center  pt-5">
+      <div className="flex items-center justify-between ">
+      <h3 className="text-5xl text-red-600 font-bold ">NETFLIX</h3>
+     
 
-      <div className="relative flex space-x-5 mr-90">
+
+      <div className="relative flex space-x-5 mr-20">
         {/* Language Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -30,6 +33,7 @@ const Header = () => {
 
         {/* Sign In Button */}
         <button className="bg-white text-black px-4 py-2 w-25 rounded-3xl border-black border-1 hover:bg-gray-300 font-semibold">Sign In</button>
+      </div>
       </div>
     </div>
   );
